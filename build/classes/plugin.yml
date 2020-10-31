@@ -1,0 +1,19 @@
+name: ModeratorPlugin
+version: 1.0
+main: org.spigotmc.moderatorManagement
+api-version: 1.13
+commands:
+  mod:
+   description: Mod a player.
+   permission: mod
+   permission-message: You do not have permission to use this command!
+   usage: /<command> [username|theirNetID]
+  de-mod:
+   description: De-mod a player.
+   permission: mod
+   permission-message: You do not have permission to use this command!
+   usage: /<command> [username|theirNetID]
+permissions:
+  mod:
+   description: Allows player to make other players moderators and revoke moderator access from other players
+   default: op
