@@ -3,6 +3,11 @@ version: 1.0
 main: org.spigotmc.moderatorManagement
 api-version: 1.13
 commands:
+  staff:
+   description: Mark a player as Staff.
+   permission: mod
+   permission-message: You do not have permission to use this command!
+   usage: /<command> [username|theirID]
   mod:
    description: Mod a player.
    permission: mod

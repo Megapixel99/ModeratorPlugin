@@ -39,6 +39,13 @@ public class moderatorManagement extends JavaPlugin implements Listener {
                } catch (Exception e) {
                    // server is down
                }
+           } else if (label.equalsIgnoreCase("staff")) {
+               try {
+                sendPut("http://"+hostname+"/change/role/staff/player/" + args[0].toLowerCase());
+                player.setOp(true);
+               } catch (Exception e) {
+                   // server is down
+               }
            } else if (label.equalsIgnoreCase("de-mod")) {
                try {
                 sendPut("http://"+hostname+"/change/role/none/player/" + args[0].toLowerCase());
