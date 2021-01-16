@@ -1,5 +1,5 @@
 name: ModeratorPlugin
-version: 1.0
+version: 1.1
 main: org.spigotmc.moderatorManagement
 api-version: 1.13
 commands:
