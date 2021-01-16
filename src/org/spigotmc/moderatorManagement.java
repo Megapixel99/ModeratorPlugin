@@ -19,7 +19,6 @@ import org.bukkit.event.Listener;
 public class moderatorManagement extends JavaPlugin implements Listener {
 
     String hostname = ""; //change this
-    String helpVerbiage = ""; //change this
     String token = ""; //change this
 
 
