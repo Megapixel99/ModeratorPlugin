@@ -7,20 +7,20 @@ https://github.com/Megapixel99/VerifyPluginServer.
 
 List of commands:
 /mod
+/staff
 /de-mod
 
 List of permissions:
-mod: Allows player to make other players moderators and revoke moderator access
-from other players
+mod: Sets the player as a mod in the database
+staff: Sets the player as a staff member in the database
+de-mod: revoke the moderator status of someone in the database
 
 ## System (environment) properties
 
 To ensure the plugin builds successfully you will need to change the following
 in `moderatorManagement.java`:
-* configure the server host to your host and port
-* set the help verbiage to whatever you call your players
-(i.e. if your player base is university students the help verbiage should be
-  set to "you are a university student")
+* configure the server host to your host (and port, if applicable)
+* set the Bearer Token which will be used (if you choose to use one)
 
 ## How to build this plugin
 
