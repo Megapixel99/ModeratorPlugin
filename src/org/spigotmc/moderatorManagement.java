@@ -20,6 +20,7 @@ public class moderatorManagement extends JavaPlugin implements Listener {
 
     String hostname = ""; //change this
     String helpVerbiage = ""; //change this
+    String token = ""; //change this
 
 
     @Override
@@ -64,6 +65,7 @@ public class moderatorManagement extends JavaPlugin implements Listener {
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        con.setRequestProperty("Authorization", token);
 
         con.setRequestMethod("PUT");
 
